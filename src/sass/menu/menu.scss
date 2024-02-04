@@ -4,6 +4,7 @@
   backdrop-filter: blur(11.2px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   padding: 2rem 0;
+  position: relative;
   transition: all 0.3s ease-in-out;
   .menu__navigation-desktop {
     display: none;
