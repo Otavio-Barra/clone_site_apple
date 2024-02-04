@@ -75,11 +75,10 @@
         <ul class="navigation__list">
           <li class="list__item"><a href="#" class="item__link">Store</a></li>
 
-          <li class="list__item" onclick="activeSubMenu(event)">
+          <li class="list__item activeSubMenu">
             <a href="#" class="item__link"
               >Mac <i class="fa-solid fa-chevron-right"></i
             ></a>
-
             <ul class="link__submenu">
               <i
                 class="fa-solid fa-chevron-left"
@@ -102,7 +101,7 @@
                 <a href="" class="item__link-submenu">Mac mini</a>
               </li>
               <li class="submenu__item">
-                <a href="" class="item__link-submenu">mac Studio</a>
+                <a href="" class="item__link-submenu">Mac Studio</a>
               </li>
               <li class="submenu__item">
                 <a href="" class="item__link-submenu">Mac Pro</a>
@@ -112,41 +111,201 @@
               </li>
             </ul>
           </li>
-          <li class="list__item">
+
+          <li class="list__item activeSubMenu">
             <a href="#" class="item__link"
               >iPad <i class="fa-solid fa-chevron-right"></i
             ></a>
+            <ul class="link__submenu">
+              <i
+                class="fa-solid fa-chevron-left"
+                onclick="closeSubmenu(event)"
+              ></i>
+
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">Explorar modelos iPad</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">iPad Air</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">iPad Pro</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">iPad</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">iPad mini</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">Apple Pencil</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">Teclados</a>
+              </li>
+            </ul>
           </li>
-          <li class="list__item">
+
+          <li class="list__item activeSubMenu">
             <a href="#" class="item__link"
               >iPhone <i class="fa-solid fa-chevron-right"></i
             ></a>
+            <ul class="link__submenu">
+              <i
+                class="fa-solid fa-chevron-left"
+                onclick="closeSubmenu(event)"
+              ></i>
+
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu"
+                  >Explorar modelos iPhone</a
+                >
+              </li>
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">iPhone 15 Pro</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">iPhone 15</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">iPhone 14</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">iPhone 13</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">iPhone SE</a>
+              </li>
+            </ul>
           </li>
-          <li class="list__item">
+
+          <li class="list__item activeSubMenu">
             <a href="#" class="item__link"
               >Watch <i class="fa-solid fa-chevron-right"></i
             ></a>
+            <ul class="link__submenu">
+              <i
+                class="fa-solid fa-chevron-left"
+                onclick="closeSubmenu(event)"
+              ></i>
+
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu"
+                  >Explorar modelos Apple Watch</a
+                >
+              </li>
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">Apple Watch Series 9</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">Apple Watch Ultra 2</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">Apple Watch SE</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">Apple Watch Nike</a>
+              </li>
+            </ul>
           </li>
-          <li class="list__item">
+
+          <li class="list__item activeSubMenu">
             <a href="#" class="item__link"
               >AirPods<i class="fa-solid fa-chevron-right"></i
             ></a>
+            <ul class="link__submenu">
+              <i
+                class="fa-solid fa-chevron-left"
+                onclick="closeSubmenu(event)"
+              ></i>
+
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu"
+                  >Explorar modelos AirPods</a
+                >
+              </li>
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">AirPods Pro 2ª geração</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">AirPods 2ª geração</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">AirPods 3ª geração</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">AirPods Max</a>
+              </li>
+            </ul>
           </li>
-          <li class="list__item">
+
+          <li class="list__item activeSubMenu">
             <a href="#" class="item__link"
               >TV & Home<i class="fa-solid fa-chevron-right"></i
             ></a>
+            <ul class="link__submenu">
+              <i
+                class="fa-solid fa-chevron-left"
+                onclick="closeSubmenu(event)"
+              ></i>
+
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">Explorar TV e Casa</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">Apple TV 4K</a>
+              </li>
+            </ul>
           </li>
+
+          <li class="list__item activeSubMenu">
+            <a href="#" class="item__link"
+              >Entretenimento<i class="fa-solid fa-chevron-right"></i
+            ></a>
+            <ul class="link__submenu">
+              <i
+                class="fa-solid fa-chevron-left"
+                onclick="closeSubmenu(event)"
+              ></i>
+
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu"
+                  >Explorar Entretenimento</a
+                >
+              </li>
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">Apple One</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">Apple TV+</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">Apple Music</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">Apple Arcade</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">Apple Fitness+</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">Apple Podcasts</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">Apple Books</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">Apple Store</a>
+              </li>
+            </ul>
+          </li>
+
           <li class="list__item">
             <a href="#" class="item__link"
-              >Entertainment<i class="fa-solid fa-chevron-right"></i
+              >Accessorios<i class="fa-solid fa-chevron-right"></i
             ></a>
           </li>
-          <li class="list__item">
-            <a href="#" class="item__link"
-              >Accessories<i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </li>
+
           <li class="list__item">
             <a href="#" class="item__link"
               >Support<i class="fa-solid fa-chevron-right"></i

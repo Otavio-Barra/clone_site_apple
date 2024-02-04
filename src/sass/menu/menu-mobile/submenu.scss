@@ -1,0 +1,20 @@
+.link__submenu {
+  background-color: $black;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 100vh;
+  padding: 3rem 0;
+  position: absolute;
+  top: 0;
+  transform: translateX(-1000px);
+  transition: all 0.4s ease-in-out;
+  width: 80%;
+  i {
+    color: $white;
+    font-size: 2rem;
+  }
+  .item__link-submenu {
+    @extend .item__link;
+  }
+}

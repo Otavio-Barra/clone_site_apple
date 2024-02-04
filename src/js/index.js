@@ -8,9 +8,12 @@ menuHamburguer.addEventListener("click", () => {
   menuMobile.classList.toggle("active");
 });
 
-function activeSubMenu(e) {
-  e.target.parentElement.children[1].classList.add("active");
-  // console.log();
+const submenu = document.querySelectorAll(".activeSubMenu");
+
+for (const menu of submenu) {
+  menu.addEventListener("click", (e) => {
+    e.target.parentElement.children[1].classList.add("active");
+  });
 }
 
 function closeSubmenu(e) {

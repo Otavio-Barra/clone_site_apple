@@ -1,8 +1,8 @@
 .menu {
+  -webkit-backdrop-filter: blur(11.2px);
   background: $background-menu;
   backdrop-filter: blur(11.2px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  -webkit-backdrop-filter: blur(11.2px);
   padding: 2rem 0;
   transition: all 0.3s ease-in-out;
   .menu__navigation-desktop {
@@ -15,12 +15,12 @@
   }
 
   .menu__icons-list {
-    display: flex;
     align-items: center;
+    display: flex;
     gap: 2rem;
     i {
-      font-size: 2rem;
       color: $white;
+      font-size: 2rem;
     }
   }
 }
@@ -29,60 +29,5 @@
   background-color: $black;
 }
 
-.menu__navigation-mobile {
-  position: absolute;
-  transform: translateY(-1000px);
-  background-color: $black;
-  width: 100%;
-  height: 100vh;
-  transition: all 0.4s ease-in-out;
-  padding: 3.5rem 10vw 0 10vw;
-  .navigation__list {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  .item__link {
-    text-decoration: none;
-    color: $white;
-    font-size: 2.5rem;
-    display: flex;
-    justify-content: space-between;
-    i {
-      opacity: 0;
-      color: $white;
-      font-size: 0.3rem;
-      transition: all 0.2s ease-in-out;
-    }
-    &:hover i {
-      opacity: 1;
-      font-size: 1.8rem;
-    }
-  }
-}
-
-.menu__navigation-mobile.active,
-.link__submenu.active {
-  transform: translate(0);
-}
-
-.link__submenu {
-  position: absolute;
-  transform: translateX(-1000px);
-  transition: all 0.4s ease-in-out;
-  background-color: $black;
-  top: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  height: 100vh;
-  padding: 3rem 0;
-  i {
-    font-size: 2rem;
-    color: $white;
-  }
-  .item__link-submenu {
-    @extend .item__link;
-  }
+@media (min-width: 820px) {
 }
