@@ -1,12 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apple</title>
+    <script
+      src="https://kit.fontawesome.com/506af95ef1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/style.min.css" />
+    <script src="./src/js/index.js" defer></script>
+  </head>
+  <body>
+    <header class="menu">
+      <div class="container">
+        <img
+          src="./src/imgs/logo-apple.svg"
+          alt="logo-apple"
+          class="menu__logo logo"
+        />
+        <nav class="menu__navigation-desktop">
+          <ul class="navigation__list">
+            <li class="list__item"><a href="#" class="item__link">Store</a></li>
+            <li class="list__item"><a href="#" class="item__link">Mac</a></li>
+            <li class="list__item"><a href="#" class="item__link">iPad</a></li>
+            <li class="list__item">
+              <a href="#" class="item__link">iPhone</a>
+            </li>
+            <li class="list__item"><a href="#" class="item__link">Watch</a></li>
+            <li class="list__item">
+              <a href="#" class="item__link">AirPods</a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="item__link">TV & Home</a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="item__link">Entertainment</a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="item__link">Accessories</a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="item__link">Support</a>
+            </li>
+          </ul>
+        </nav>
 
-</head>
-<body>
+        <ul class="menu__icons-list">
+          <li class="icons-list__item">
+            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+          </li>
+          <li class="icons-list__item">
+            <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+          </li>
+          <li class="icons-list__item">
+            <a href=""><i class="fa-solid fa-user"></i></a>
+          </li>
+          <li id="nav">
+            <button id="navMenu">
+              <span></span>
+              <span></span>
+            </button>
+          </li>
+        </ul>
+      </div>
 
-</body>
+      <nav class="menu__navigation-mobile">
+        <ul class="navigation__list">
+          <li class="list__item"><a href="#" class="item__link">Store</a></li>
+
+          <li class="list__item" onclick="activeSubMenu(event)">
+            <a href="#" class="item__link"
+              >Mac <i class="fa-solid fa-chevron-right"></i
+            ></a>
+
+            <ul class="link__submenu">
+              <i
+                class="fa-solid fa-chevron-left"
+                onclick="closeSubmenu(event)"
+              ></i>
+
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">Explorar modelos mac</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">MacBook Air</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">MacBook Pro</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">iMac</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">Mac mini</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">mac Studio</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">Mac Pro</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="item__link-submenu">Monitores</a>
+              </li>
+            </ul>
+          </li>
+          <li class="list__item">
+            <a href="#" class="item__link"
+              >iPad <i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </li>
+          <li class="list__item">
+            <a href="#" class="item__link"
+              >iPhone <i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </li>
+          <li class="list__item">
+            <a href="#" class="item__link"
+              >Watch <i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </li>
+          <li class="list__item">
+            <a href="#" class="item__link"
+              >AirPods<i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </li>
+          <li class="list__item">
+            <a href="#" class="item__link"
+              >TV & Home<i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </li>
+          <li class="list__item">
+            <a href="#" class="item__link"
+              >Entertainment<i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </li>
+          <li class="list__item">
+            <a href="#" class="item__link"
+              >Accessories<i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </li>
+          <li class="list__item">
+            <a href="#" class="item__link"
+              >Support<i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </body>
 </html>

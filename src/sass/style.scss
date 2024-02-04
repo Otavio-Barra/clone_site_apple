@@ -1,0 +1,9 @@
+@import "./reset.scss";
+@import "./variables.scss";
+@import "./menu/menu.scss";
+@import "./menu/hamburguer-menu/hamburguer-menu.scss";
+
+.container {
+  max-width: min(80vw, 1440px);
+  margin: 0 auto;
+}
