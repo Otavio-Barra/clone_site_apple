@@ -1,34 +1,32 @@
 const menuHamburguer = document.querySelector("#navMenu");
-let menu = document.querySelector(".menu");
-const menuMobile = document.querySelector(".menu__navigation-mobile");
+const header = document.querySelector(".menu");
+const menuMobile = document.querySelector(".menu__navigation");
+const submenu = document.querySelectorAll(".activeSubMenu");
+const subMenuActived = document.querySelectorAll(".link__submenu");
 
 menuHamburguer.addEventListener("click", () => {
-  menu.classList.toggle("active");
+  header.classList.toggle("active");
   menuHamburguer.classList.toggle("active");
   menuMobile.classList.toggle("active");
 });
 
-const submenu = document.querySelectorAll(".activeSubMenu");
-const teste = document.querySelectorAll(".fa-chevron-left");
-const ulSubMenuActived = document.querySelectorAll(".link__submenu");
-
 for (let i = 0; i < submenu.length; i++) {
-  const subMenuAtual = submenu[i];
-  subMenuAtual.addEventListener("click", () => {
-    menu.classList.add("active");
-    if (!ulSubMenuActived[i].classList.contains("active")) {
-      const submenuAtivo = document.querySelector(".link__submenu.active");
-      console.log(submenuAtivo);
-      if (submenuAtivo) {
-        submenuAtivo.classList.remove("active");
+  const currentSubMenu = submenu[i];
+  currentSubMenu.addEventListener("click", () => {
+    header.classList.add("active");
+    if (!subMenuActived[i].classList.contains("active")) {
+      const submenuEnabled = document.querySelector(".link__submenu.active");
+      console.log(submenuEnabled);
+      if (submenuEnabled) {
+        submenuEnabled.classList.remove("active");
       }
-      ulSubMenuActived[i].classList.add("active");
+      subMenuActived[i].classList.add("active");
     }
   });
 }
 
 function closeSubmenu(e) {
-  menu.classList.remove("active");
   const close = e.target.parentElement;
+  header.classList.remove("active");
   close.classList.remove("active");
 }

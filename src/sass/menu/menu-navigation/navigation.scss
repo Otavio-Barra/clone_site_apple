@@ -1,4 +1,4 @@
-.menu__navigation-mobile {
+.menu__navigation {
   background-color: $black;
   position: absolute;
   height: 100vh;
@@ -32,12 +32,12 @@
   }
 }
 
-.menu__navigation-mobile.active,
+.menu__navigation.active,
 .link__submenu.active {
   transform: translate(0);
 }
 @media (min-width: 920px) {
-  .menu__navigation-mobile {
+  .menu__navigation {
     background-color: transparent;
     position: inherit;
     height: auto;
