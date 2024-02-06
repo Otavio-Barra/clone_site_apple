@@ -30,5 +30,12 @@
   background-color: $black;
 }
 
-@media (min-width: 820px) {
+@media (min-width: 920px) {
+  .menu {
+    transition: all 0.5s ease-in-out;
+
+    img {
+      width: 3rem;
+    }
+  }
 }

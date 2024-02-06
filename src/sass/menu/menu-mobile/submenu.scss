@@ -18,3 +18,23 @@
     @extend .item__link;
   }
 }
+@media (min-width: 920px) {
+  .link__submenu {
+    height: 50vh;
+    top: 6rem;
+    transform: translateX(-10000px);
+    padding: 3rem 0;
+    padding-left: calc((100vw - min(80vw, 1440px)) / 2);
+    width: 100vw;
+
+    left: 0;
+    i {
+      color: $white;
+      cursor: pointer;
+      font-size: 2rem;
+    }
+    .item__link-submenu {
+      width: 20%;
+    }
+  }
+}

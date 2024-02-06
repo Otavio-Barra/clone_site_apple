@@ -35,3 +35,11 @@
     transform: translateY(-5px) rotate(90deg);
   }
 }
+@media (min-width: 920px) {
+  #navMenu,
+  #nav {
+    position: absolute;
+    display: none;
+    overflow: hidden;
+  }
+}

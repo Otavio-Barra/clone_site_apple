@@ -36,3 +36,25 @@
 .link__submenu.active {
   transform: translate(0);
 }
+@media (min-width: 920px) {
+  .menu__navigation-mobile {
+    background-color: transparent;
+    position: inherit;
+    height: auto;
+    padding: 0;
+    transform: none;
+    .navigation__list {
+      flex-direction: row;
+      justify-content: center;
+      gap: 1.5rem;
+      width: 100%;
+    }
+    .item__link {
+      font-size: clamp(1.2rem, 1vw, 1.3rem);
+      font-weight: bold;
+      i {
+        display: none;
+      }
+    }
+  }
+}
