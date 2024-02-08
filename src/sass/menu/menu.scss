@@ -1,11 +1,13 @@
 .menu {
   -webkit-backdrop-filter: blur(11.2px);
   background: $background-menu;
-  backdrop-filter: blur(11.2px);
+  backdrop-filter: blur(4px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   padding: 2rem 0;
-  position: relative;
+  position: sticky;
+  top: 0;
   transition: all 0.3s ease-in-out;
+  z-index: 1;
   .menu__navigation-desktop {
     display: none;
   }
@@ -33,7 +35,7 @@
 @media (min-width: 920px) {
   .menu {
     transition: all 0.5s ease-in-out;
-
+    padding: 1rem;
     img {
       width: 3rem;
     }

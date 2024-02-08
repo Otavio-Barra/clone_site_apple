@@ -4,7 +4,11 @@
 @import "./menu/menu-navigation/hamburguer-menu.scss";
 @import "./menu/menu-navigation/navigation.scss";
 @import "./menu/menu-navigation/submenu.scss";
+@import "./main/section-banner/section-banner.scss";
 .container {
-  max-width: min(80vw, 1440px);
+  max-width: min(85vw, 1440px);
   margin: 0 auto;
+}
+body {
+  // background-color: #000;
 }

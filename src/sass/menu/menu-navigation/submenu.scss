@@ -26,7 +26,6 @@
     padding: 3rem 0;
     padding-left: calc((100vw - min(80vw, 1440px)) / 2);
     width: 100vw;
-
     left: 0;
     i {
       color: $white;
@@ -34,6 +33,7 @@
       font-size: 2rem;
     }
     .item__link-submenu {
+      font-size: 5rem;
       width: 20%;
     }
   }
