@@ -5,10 +5,8 @@
 @import "./menu/menu-navigation/navigation.scss";
 @import "./menu/menu-navigation/submenu.scss";
 @import "./main/section-banner/section-banner.scss";
+@import "./main/section-categories/categories.scss";
 .container {
   max-width: min(85vw, 1440px);
   margin: 0 auto;
-}
-body {
-  // background-color: #000;
 }

@@ -8,6 +8,10 @@
   top: 0;
   transition: all 0.3s ease-in-out;
   z-index: 1;
+  .logo {
+    font-size: 2.6rem;
+    color: $white;
+  }
   .menu__navigation-desktop {
     display: none;
   }

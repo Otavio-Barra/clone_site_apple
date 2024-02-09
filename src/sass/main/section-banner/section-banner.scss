@@ -1,6 +1,5 @@
 .content__bunner {
   height: 55.5rem;
-  width: 100vw;
   background-image: url(../imgs/iphone-capa-mobile.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -51,13 +50,12 @@
 
 @media (min-width: 920px) {
   .content__bunner {
-    height: calc(100vh - 5.28rem);
+    height: auto;
+    padding-top: 8rem;
+    padding-bottom: 12.7rem;
     background-image: none;
     background-color: $black;
     position: relative;
-    .bunner__title {
-      padding-top: 8rem;
-    }
     .banner__container-img {
       display: block;
       width: 70%;
@@ -69,7 +67,11 @@
     .bunner__alert-text {
       position: absolute;
       display: block;
-      bottom: 0.5rem;
+      bottom: 1rem;
+
+      .text-blue {
+        color: $blue-btn;
+      }
     }
   }
 }
