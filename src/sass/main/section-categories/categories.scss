@@ -1,3 +1,40 @@
-.categories-menu__list-categories {
-  display: flex;
+.content__categories-menu {
+  position: relative;
+
+  .fa-chevron-left,
+  .fa-chevron-right {
+    font-size: 1.8rem;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    color: $black;
+  }
+  .fa-chevron-left {
+    left: -1.5rem;
+  }
+  .fa-chevron-right {
+    right: -1.5rem;
+  }
+
+  .categories-menu__list-categories {
+    padding: 2.4rem 0;
+    display: flex;
+    gap: 3rem;
+    overflow-y: hidden;
+    .list-categories__category {
+      text-align: center;
+      .category__link-category {
+        text-decoration: none;
+        .category__img-device {
+          max-width: 10rem;
+          margin-bottom: 1.3rem;
+        }
+        .link-category__text-category {
+          font-size: 1.4rem;
+          font-weight: 500;
+          color: $black;
+        }
+      }
+    }
+  }
 }
