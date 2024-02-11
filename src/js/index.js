@@ -40,14 +40,11 @@ const arrows = document.querySelectorAll(".control-carrosel");
 arrows.forEach((arrow) => {
   arrow.addEventListener("click", () => {
     const getClassArrow = arrow.firstElementChild.classList[1];
-    const maxWidthElement = listCategories.scrollLeftMax;
-    const widthItem = 100;
-    const calcDisplacement = widthItem * 9 - maxWidthElement;
 
     const displacement =
       getClassArrow === "fa-chevron-left"
-        ? (listCategories.scrollLeft -= calcDisplacement)
-        : (listCategories.scrollLeft += calcDisplacement);
+        ? (listCategories.scrollLeft -= 360)
+        : (listCategories.scrollLeft += 360);
 
     return displacement;
   });
