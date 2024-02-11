@@ -20,6 +20,7 @@
     padding: 2.4rem 0;
     display: flex;
     gap: 3rem;
+    justify-content: space-between;
     overflow: hidden;
     .list-categories__category {
       text-align: center;
@@ -36,5 +37,11 @@
         }
       }
     }
+  }
+}
+
+@media (min-width: 1336px) {
+  .control-carrosel {
+    display: none;
   }
 }

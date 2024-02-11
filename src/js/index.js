@@ -40,7 +40,6 @@ const arrows = document.querySelectorAll(".control-carrosel");
 arrows.forEach((arrow) => {
   arrow.addEventListener("click", () => {
     const getClassArrow = arrow.firstElementChild.classList[1];
-
     const displacement =
       getClassArrow === "fa-chevron-left"
         ? (listCategories.scrollLeft -= 320)

@@ -6,7 +6,12 @@
 @import "./menu/menu-navigation/submenu.scss";
 @import "./main/section-banner/section-banner.scss";
 @import "./main/section-categories/categories.scss";
+@import "./main/section-cards/section-card.scss";
 .container {
   max-width: min(85vw, 1440px);
   margin: 0 auto;
+}
+.text-blue {
+  color: $blue-btn;
+  text-decoration: none;
 }
