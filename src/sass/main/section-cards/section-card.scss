@@ -13,7 +13,7 @@
 
   .container-cards__card {
     background-color: $black;
-    padding: 3rem 4rem;
+    padding: 0 4rem;
     border-radius: 1rem;
     display: flex;
     align-items: center;
@@ -22,33 +22,77 @@
     &.first-card {
       flex-direction: column;
       text-align: center;
+      padding: 3rem 4rem;
+      .card__container-img {
+        width: 50%;
+        img {
+          width: 50%;
+        }
+      }
       .container-texts__container-links {
         justify-content: center;
       }
     }
+
     &.last-card {
       background-size: cover;
+      background-repeat: no-repeat;
       background-position: center;
+      text-align: center;
       background-image: url(../imgs/card-background.png);
+      position: relative;
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      .card__container-texts {
+        z-index: 1;
+        .container-content {
+          top: 1rem;
+        }
+        .container-texts__container-links,
+        .container-content {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        .container-texts__container-links {
+          bottom: 1rem;
+        }
+      }
     }
     .card__container-img {
       width: 50%;
-      text-align: center;
+      img {
+        width: 100%;
+      }
     }
     .card__container-texts {
       .container-texts__title-card {
         margin-bottom: 1rem;
-        font-size: 2.1rem;
+        font-size: clamp(2.1rem, 5vw, 3.6rem);
         font-weight: 500;
+        img {
+          width: 1.5rem;
+        }
+        .version-watch {
+          font-size: clamp(1.4rem, 2.3vw, 1.6rem);
+          white-space: nowrap;
+        }
       }
       .container-texts__text-description {
-        font-size: 1.4rem;
+        font-size: clamp(1.4rem, 3vw, 2rem);
         margin-bottom: 1.5rem;
       }
       .container-texts__container-links {
-        font-size: 1.2rem;
+        font-size: clamp(1.2rem, 2.5vw, 1.6rem);
         display: flex;
         gap: 2rem;
+        white-space: nowrap;
       }
     }
   }
@@ -68,4 +112,88 @@
 }
 .last-card {
   grid-area: last-card;
+}
+
+@media (min-width: 650px) {
+  .content__container-cards {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "first-card first-card"
+      "second-card third-card"
+      "fourth-card last-card";
+    .container-cards__card {
+      flex-direction: column;
+      justify-content: center;
+      .card__container-texts {
+        .container-texts__title-card {
+          img {
+            width: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 890px) {
+  .content__container-cards {
+    padding: 1rem 0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+    grid-template-areas:
+      "first-card first-card second-card"
+      "third-card fourth-card fourth-card "
+      "last-card last-card last-card";
+
+    .container-cards__card {
+      align-items: flex-start;
+      padding: 3rem 4rem;
+
+      &.first-card,
+      &.fourth-card {
+        flex-direction: row;
+        text-align: initial;
+        align-items: center;
+        .card__container-img {
+          img {
+            width: 80%;
+          }
+        }
+
+        .container-texts__container-links {
+          justify-content: start;
+        }
+      }
+      .card__container-img {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1045px) {
+  .content__container-cards {
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    grid-template-areas:
+      "first-card first-card second-card last-card"
+      "third-card fourth-card fourth-card last-card ";
+    .container-cards__card {
+      &.last-card {
+        .card__container-texts {
+          .container-content {
+            img {
+              width: 20rem;
+            }
+          }
+        }
+      }
+    }
+  }
 }
