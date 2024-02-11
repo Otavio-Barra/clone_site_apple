@@ -16,7 +16,6 @@ for (let i = 0; i < submenu.length; i++) {
     header.classList.add("active");
     if (!subMenuActived[i].classList.contains("active")) {
       const submenuEnabled = document.querySelector(".link__submenu.active");
-      console.log(submenuEnabled);
       if (submenuEnabled) {
         submenuEnabled.classList.remove("active");
       }
@@ -30,3 +29,26 @@ function closeSubmenu(e) {
   header.classList.remove("active");
   close.classList.remove("active");
 }
+
+//menu categoria
+
+const listCategories = document.querySelector(
+  ".categories-menu__list-categories"
+);
+const arrows = document.querySelectorAll(".control-carrosel");
+
+arrows.forEach((arrow) => {
+  arrow.addEventListener("click", () => {
+    const getClassArrow = arrow.firstElementChild.classList[1];
+    const maxWidthElement = listCategories.scrollLeftMax;
+    const widthItem = 100;
+    const calcDisplacement = widthItem * 9 - maxWidthElement;
+
+    const displacement =
+      getClassArrow === "fa-chevron-left"
+        ? (listCategories.scrollLeft -= calcDisplacement)
+        : (listCategories.scrollLeft += calcDisplacement);
+
+    return displacement;
+  });
+});
