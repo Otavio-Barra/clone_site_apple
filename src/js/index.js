@@ -43,8 +43,8 @@ arrows.forEach((arrow) => {
 
     const displacement =
       getClassArrow === "fa-chevron-left"
-        ? (listCategories.scrollLeft -= 340)
-        : (listCategories.scrollLeft += 340);
+        ? (listCategories.scrollLeft -= 320)
+        : (listCategories.scrollLeft += 320);
 
     return displacement;
   });
