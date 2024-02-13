@@ -1,18 +1,18 @@
 .content__bunner {
-  height: 55.5rem;
+  align-items: center;
   background-image: url(../imgs/iphone-capa-mobile.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  color: $white;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  color: $white;
+  height: 55.5rem;
   .bunner__title {
     font-size: clamp(3.8em, 5vw, 4.8rem);
     font-weight: 500;
-    padding-top: 3rem;
     margin-bottom: 0.7rem;
+    padding-top: 3rem;
   }
   .bunner__descriptionTitle {
     font-size: clamp(2rem, 5vw, 2.4rem);
@@ -20,25 +20,25 @@
     margin-bottom: 2rem;
   }
   .bunner__container-btn {
-    font-size: 1.3rem;
     display: flex;
+    font-size: 1.3rem;
     gap: 2rem;
     text-align: center;
     .container-btn__learnMore-btn {
-      text-decoration: none;
-      color: $blue-btn;
       border: 1px solid $blue-btn;
       border-radius: 2rem;
+      color: $blue-btn;
+      text-decoration: none;
       padding: 1rem;
       width: 9.7rem;
     }
     .container-btn__buyNow-btn {
-      text-decoration: none;
-      color: $white;
-      border: 1px solid $blue-btn;
       background-color: $blue-btn;
+      border: 1px solid $blue-btn;
       border-radius: 2rem;
+      color: $white;
       padding: 1rem;
+      text-decoration: none;
       width: 9.7rem;
     }
   }
@@ -50,11 +50,11 @@
 
 @media (min-width: 920px) {
   .content__bunner {
+    background-color: $black;
+    background-image: none;
     height: auto;
     padding-top: 8rem;
     padding-bottom: 12.7rem;
-    background-image: none;
-    background-color: $black;
     position: relative;
     .banner__container-img {
       display: block;
@@ -65,9 +65,9 @@
     }
 
     .bunner__alert-text {
-      position: absolute;
-      display: block;
       bottom: 1rem;
+      display: block;
+      position: absolute;
     }
   }
 }

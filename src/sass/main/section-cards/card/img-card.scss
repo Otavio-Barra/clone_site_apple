@@ -1,0 +1,31 @@
+.first-card {
+  .card__container-img {
+    width: 50%;
+    img {
+      width: 50%;
+    }
+  }
+}
+.card__container-img {
+  width: 50%;
+  img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 890px) {
+  .first-card,
+  .fourth-card {
+    .card__container-img {
+      img {
+        width: 80%;
+      }
+    }
+  }
+  .card__container-img {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+}
