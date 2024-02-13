@@ -1,0 +1,31 @@
+.ad-university {
+  display: flex;
+  gap: 1.2rem;
+  flex-direction: column;
+  padding: 1.2rem 0;
+  text-align: center;
+
+  .content__title {
+    font-size: clamp(2.4rem, 4vw, 3.2rem);
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  .content__text {
+    font-size: clamp(1.6rem, 2vw, 2rem);
+    margin-bottom: 1rem;
+  }
+  .text-blue {
+    font-size: clamp(1.4rem, 3vw, 1.6rem);
+  }
+}
+@media (min-width: 650px) {
+  .ad-university {
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    text-align: start;
+    .family-apple-device {
+      width: 30%;
+    }
+  }
+}

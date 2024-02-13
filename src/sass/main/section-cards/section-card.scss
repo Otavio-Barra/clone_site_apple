@@ -34,7 +34,7 @@
 
 @media (min-width: 650px) {
   .content__container-cards {
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
       "first-card first-card"
       "second-card third-card"
