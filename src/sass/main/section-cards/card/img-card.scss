@@ -1,8 +1,8 @@
 .first-card {
   .card__container-img {
-    width: 50%;
+    width: 35%;
     img {
-      width: 50%;
+      width: 100%;
     }
   }
 }
@@ -12,18 +12,25 @@
     width: 100%;
   }
 }
-
+.ad-university + .content__container-cards .container-cards__card {
+  .card__container-img {
+    width: 80%;
+    img {
+      width: 100%;
+    }
+  }
+}
 @media (min-width: 890px) {
   .first-card,
   .fourth-card {
     .card__container-img {
       img {
-        width: 80%;
+        width: 70%;
       }
     }
   }
   .card__container-img {
-    width: 100%;
+    width: 70%;
     img {
       width: 100%;
     }

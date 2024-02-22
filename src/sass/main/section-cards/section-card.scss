@@ -15,6 +15,10 @@
     "last-card last-card";
   padding: 1rem 0;
 }
+.ad-university + .content__container-cards {
+  display: flex;
+  flex-direction: column;
+}
 
 .first-card {
   grid-area: first-card;
@@ -39,6 +43,11 @@
       "first-card first-card"
       "second-card third-card"
       "fourth-card last-card";
+  }
+  .ad-university + .content__container-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }
 

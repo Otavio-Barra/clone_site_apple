@@ -4,7 +4,7 @@
   border-radius: 1rem;
   color: $white;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   padding: 0 4rem;
   &.first-card {
     flex-direction: column;
@@ -30,11 +30,26 @@
     }
   }
 }
+.ad-university + .content__container-cards .container-cards__card {
+  flex-direction: column;
+  padding: 3rem 4rem;
+  text-align: center;
+  .card__container-texts {
+    text-align: center;
+
+    .container-texts__container-links {
+      text-align: center;
+    }
+  }
+}
 
 @media (min-width: 650px) {
   .container-cards__card {
     flex-direction: column;
     justify-content: center;
+  }
+  .ad-university + .content__container-cards .container-cards__card {
+    width: 50%;
   }
 }
 

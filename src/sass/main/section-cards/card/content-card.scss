@@ -45,6 +45,9 @@
     gap: 2rem;
     white-space: nowrap;
   }
+  .card__container-icons {
+    display: none;
+  }
 }
 @media (min-width: 650px) {
   .card__container-texts {
@@ -61,6 +64,33 @@
   .fourth-card {
     .container-texts__container-links {
       justify-content: start;
+    }
+  }
+  .ad-university + .content__container-cards {
+    .container-texts__container-links {
+      justify-content: center;
+    }
+  }
+  .card__container-texts {
+    .container-texts__title-card {
+      img {
+        width: 2.5rem;
+      }
+    }
+    .card__container-icons {
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+      margin-top: 2rem;
+      i {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        color: $white;
+      }
+      p {
+        color: $white;
+        font-size: 1.4rem;
+      }
     }
   }
 }
