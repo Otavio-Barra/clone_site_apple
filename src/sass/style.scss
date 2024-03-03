@@ -8,9 +8,9 @@
 @import "./main/section-categories/categories.scss";
 @import "./main/section-cards/section-card.scss";
 @import "./main/article-ad-university/ad-university.scss";
-
+@import "./main/section-carrosel/carrosel.scss";
 .container {
-  max-width: min(85vw, 1440px);
+  max-width: min(90vw, 1440px);
   margin: 0 auto;
 }
 .text-blue {

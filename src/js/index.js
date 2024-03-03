@@ -48,3 +48,28 @@ arrows.forEach((arrow) => {
     return displacement;
   });
 });
+
+////
+
+// let contador = 1;
+
+// function carrosel() {
+//   let imagem = document.querySelector(`#carrousel__img-${contador}`);
+
+//   if (imagem.classList.length == 2) {
+//     imagem.classList.remove("active");
+//   } else {
+//     console.log("invisivel");
+//   }
+
+//   if (contador == 4) {
+//     contador = 0;
+//   }
+//   contador++;
+//   // console.log(imagem.classList);
+// }
+
+let box = document.querySelector(".appleTV__carrousel");
+let imagens = document.querySelectorAll(".carrousel__img");
+
+let contador = 1;
