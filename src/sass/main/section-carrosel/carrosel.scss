@@ -1,101 +1,3 @@
-.container__carrosel-cards {
-  width: 100%;
-  display: flex;
-  gap: 2rem;
-  overflow: hidden;
-  margin-bottom: 4rem;
-  .carrosel-img__card {
-    height: 495px;
-    width: 280px;
-
-    flex-shrink: 0;
-    background-image: url(../imgs/killers-capa-mobile.jpg);
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    .inner {
-      // black - #00000080
-      background: linear-gradient(180deg, #00000000 5%, #00000059 37%);
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2.5rem;
-      justify-content: space-between;
-      .card__content-top {
-        text-align: center;
-        .content-top__title-serie img {
-          width: 60%;
-          margin-top: 1rem;
-        }
-        .logo-appleTV img {
-          width: 35%;
-        }
-      }
-
-      .card__content-bottom {
-        height: auto;
-        text-align: center;
-        color: #fff;
-        .content-bottom__genero {
-          font-weight: 500;
-          margin-bottom: 0.5rem;
-          font-size: 1.5rem;
-        }
-        .content-bottom__description-serie {
-          font-size: 1.5rem;
-          margin-bottom: 1.5rem;
-        }
-        .content-bottom__btn-stream {
-          cursor: pointer;
-          background-color: $white;
-          color: $black;
-          padding: 1.5rem 2rem;
-          border-radius: 2rem;
-          font-size: 1.5rem;
-          display: inline-flex;
-          align-items: center;
-          gap: 0.5rem;
-          justify-content: center;
-        }
-      }
-    }
-  }
-}
-
-//
-
-.content__appleTV {
-  text-align: center;
-  padding-top: 3rem;
-  .appleTV__title {
-    font-size: 3.2rem;
-    margin-bottom: 0.5rem;
-  }
-  .appleTV__description-text {
-    font-size: 1.6rem;
-    margin-bottom: 2.5rem;
-  }
-  .appleTV__container-links {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    font-size: 1.6rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
-  }
-  .appleTV__sing-in {
-    background-color: $blue-btn;
-    color: $white;
-    text-decoration: none;
-    padding: 1rem 2rem;
-    border-radius: 2rem;
-    font-size: 1.3rem;
-  }
-}
-
 .appleTV__carrousel {
   margin-top: 3rem;
   position: relative;
@@ -108,12 +10,17 @@
     top: 50%;
     padding: 0.5rem 1rem;
     border-radius: 1rem;
-    transform: translateX(-50%);
   }
   .carrousel__control.left {
     left: 0;
   }
   .carrousel__control.right {
     right: 0;
+  }
+}
+
+@media (min-width: 700px) {
+  .carrousel__control {
+    // display: none;
   }
 }

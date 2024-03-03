@@ -1,0 +1,11 @@
+@import "./overley-card.scss";
+@import "./moveCover-card.scss";
+@import "./title-card.scss";
+@import "./description-card.scss";
+.container__carrosel-cards {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  overflow: hidden;
+  margin-bottom: 4rem;
+}

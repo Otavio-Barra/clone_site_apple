@@ -1,3 +1,6 @@
+@import "./menu-navigation/hamburguer-menu.scss";
+@import "./menu-navigation/navigation.scss";
+@import "./menu-navigation/submenu.scss";
 .menu {
   -webkit-backdrop-filter: blur(11.2px);
   background: $background-menu;

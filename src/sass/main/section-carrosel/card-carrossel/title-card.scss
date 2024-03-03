@@ -1,0 +1,15 @@
+.card__content-top {
+  text-align: center;
+  .content-top__title-serie img {
+    width: 60%;
+    margin-top: 1rem;
+  }
+  .logo-appleTV img {
+    width: 35%;
+  }
+}
+@media (min-width: 700px) {
+  .card__content-top {
+    display: none;
+  }
+}

@@ -1,0 +1,24 @@
+.inner {
+  // black - #00000080
+  background: linear-gradient(180deg, #00000000 5%, #00000059 37%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem;
+  justify-content: space-between;
+}
+
+@media (min-width: 700px) {
+  .inner {
+    background: linear-gradient(180deg, #00000000 5%, #0000004d 37%);
+    justify-content: end;
+    align-items: start;
+  }
+}
+@media (min-width: 1070px) {
+  .inner {
+    background: linear-gradient(180deg, #00000000 5%, #0000001c 37%);
+  }
+}

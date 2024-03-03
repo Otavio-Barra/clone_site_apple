@@ -1,0 +1,42 @@
+.card__content-bottom {
+  height: auto;
+  text-align: center;
+  color: #fff;
+  .content-bottom__genero {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+  }
+  .content-bottom__description-serie {
+    font-size: clamp(1.5rem, 3vw, 1.8rem);
+    margin-bottom: 1.5rem;
+  }
+  .content-bottom__btn-stream {
+    cursor: pointer;
+    background-color: $white;
+    color: $black;
+    padding: 1.5rem 2rem;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+}
+@media (min-width: 700px) {
+  .card__content-bottom {
+    text-align: start;
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+    .content-bottom__description-serie,
+    .content-bottom__genero {
+      margin-bottom: 0;
+    }
+    .content-bottom__btn-stream {
+      order: -1;
+      width: 160px;
+    }
+  }
+}

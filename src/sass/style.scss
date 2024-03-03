@@ -1,13 +1,11 @@
 @import "./reset.scss";
 @import "./variables.scss";
 @import "./menu/menu.scss";
-@import "./menu/menu-navigation/hamburguer-menu.scss";
-@import "./menu/menu-navigation/navigation.scss";
-@import "./menu/menu-navigation/submenu.scss";
 @import "./main/section-banner/section-banner.scss";
 @import "./main/section-categories/categories.scss";
 @import "./main/section-cards/section-card.scss";
 @import "./main/article-ad-university/ad-university.scss";
+@import "./main/section-carrosel/section-content.scss";
 @import "./main/section-carrosel/carrosel.scss";
 .container {
   max-width: min(90vw, 1440px);

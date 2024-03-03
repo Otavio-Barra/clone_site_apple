@@ -1,0 +1,60 @@
+.carrosel-img__card {
+  height: 495px;
+  width: 280px;
+  flex-shrink: 0;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.killers {
+  background-image: url(../imgs/killers-capa-mobile.jpg);
+}
+
+.constellation {
+  background-image: url(../imgs/constellation-capa-mobile.jpg);
+}
+
+.morning {
+  background-image: url(../imgs/morning-capa-mobile.jpg);
+}
+
+.ted {
+  background-image: url(../imgs/ted-capa-mobile.jpg);
+}
+
+@media (min-width: 700px) {
+  .carrosel-img__card {
+    height: 300px;
+    width: 600px;
+    flex-shrink: 0;
+    background-position: center;
+    background-size: 100%;
+  }
+
+  .killers {
+    background-image: url(../imgs/killers-capa-tablet.jpg);
+  }
+
+  .constellation {
+    background-image: url(../imgs/constellation-capa-tablet.jpg);
+  }
+
+  .morning {
+    background-image: url(../imgs/morning-capa-tablet.jpg);
+  }
+
+  .ted {
+    background-image: url(../imgs/ted-capa-tablet.jpg);
+  }
+}
+
+@media (min-width: 1070px) {
+  .carrosel-img__card {
+    height: 520px;
+    width: 980px;
+    flex-shrink: 0;
+    background-position: center;
+    background-size: 100%;
+  }
+}
