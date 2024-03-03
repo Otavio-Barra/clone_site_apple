@@ -1,26 +1,36 @@
 .content__categories-menu {
   position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+
   .fa-chevron-left,
   .fa-chevron-right {
     font-size: 1.8rem;
     position: absolute;
     top: 50%;
+    transform: translateY(-50%);
     cursor: pointer;
-    color: $black;
+    color: $white;
+    height: 30%;
+    width: 4rem;
+    border-radius: 100%;
+    background: #00000067;
   }
   .fa-chevron-left {
-    left: -1.5rem;
+    left: -0.5rem;
+    z-index: 1;
   }
   .fa-chevron-right {
-    right: -1.5rem;
+    right: -0.5rem;
   }
 
   .categories-menu__list-categories {
     display: flex;
     gap: 3rem;
-    justify-content: space-between;
-    overflow: hidden;
+    justify-content: center;
     padding: 2.4rem 0;
+    width: 100%;
     .list-categories__category {
       text-align: center;
       .category__link-category {

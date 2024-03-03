@@ -31,3 +31,39 @@ function closeSubmenu(e) {
 }
 
 //menu categoria
+const menuCategory = document.querySelector('[data-slide="menu-category"]');
+const menuList = document.querySelector('[data-slide="slide-list"]');
+const nextSlideButton = document.querySelector(
+  '[data-slide="nav-next-button"]'
+);
+const previousSlideButton = document.querySelector(
+  '[data-slide="nav-previous-button"]'
+);
+const slideMenuItems = document.querySelectorAll('[data-slide="item"]');
+
+const statesMenuCategory = {
+  currentSlideIndex: 0,
+  savePosition: 0,
+};
+
+nextSlideButton.addEventListener("click", nextSlide);
+previousSlideButton.addEventListener("click", previousSlide);
+
+function nextSlide() {
+  setVisibleSlide(statesMenuCategory.currentSlideIndex + 1);
+}
+function previousSlide() {
+  setVisibleSlide(statesMenuCategory.currentSlideIndex - 1);
+}
+function setVisibleSlide(index) {
+  const slideItem = slideMenuItems[index];
+  const slideWidth = slideItem.clientWidth;
+  const position = index * slideWidth;
+  statesMenuCategory.currentSlideIndex = index;
+  translateSlide(-position);
+}
+function translateSlide(position) {
+  menuList.style.transform = `translateX(${position}px)`;
+  console.log(menuList.transform);
+  statesMenuCategory.savePosition = position;
+}
