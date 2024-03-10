@@ -1,7 +1,8 @@
 .carrosel-img__card {
   height: 495px;
-  width: 280px;
+  width: 70vw;
   flex-shrink: 0;
+
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -56,5 +57,20 @@
     flex-shrink: 0;
     background-position: center;
     background-size: 100%;
+  }
+  .killers {
+    background-image: url(../imgs/killers-capa-desktop.jpg);
+  }
+
+  .constellation {
+    background-image: url(../imgs/constellation-capa-desktop.jpg);
+  }
+
+  .morning {
+    background-image: url(../imgs/morning-capa-desktop.jpg);
+  }
+
+  .ted {
+    background-image: url(../imgs/ted-capa-desktop.jpg);
   }
 }

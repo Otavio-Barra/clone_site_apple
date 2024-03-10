@@ -3,9 +3,8 @@
 @import "./title-card.scss";
 @import "./description-card.scss";
 .container__carrosel-cards {
-  width: 100%;
   display: flex;
-  gap: 2rem;
-  overflow: hidden;
-  margin-bottom: 4rem;
+  transition: 0.6s ease-in-out;
+  // gap: 1rem;
+  // justify-content: center;
 }

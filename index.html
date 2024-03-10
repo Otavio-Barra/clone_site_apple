@@ -309,20 +309,9 @@
           HDFC Bank cards.* <a class="text-blue" href="">Shop now ></a>
         </p>
       </section>
-      <section
-        class="container content__categories-menu"
-        data-slide="menu-category"
-      >
-        <button
-          class="control-carrosel fa-solid fa-chevron-left"
-          data-slide="nav-previous-button"
-        ></button>
-        <ul class="categories-menu__list-categories" data-slide="slide-list">
-          <li
-            class="list-categories__category"
-            data-slide="item"
-            data-index="0"
-          >
+      <section class="container content__categories-menu">
+        <ul class="categories-menu__list-categories">
+          <li class="list-categories__category">
             <a href="" class="category__link-category">
               <img
                 src="./src/imgs/mac.png"
@@ -333,11 +322,7 @@
             </a>
           </li>
 
-          <li
-            class="list-categories__category"
-            data-slide="item"
-            data-index="1"
-          >
+          <li class="list-categories__category">
             <a href="" class="category__link-category">
               <img
                 src="./src/imgs/iPhone.png"
@@ -348,11 +333,7 @@
             </a>
           </li>
 
-          <li
-            class="list-categories__category"
-            data-slide="item"
-            data-index="2"
-          >
+          <li class="list-categories__category">
             <a href="" class="category__link-category">
               <img
                 src="./src/imgs/iPad.png"
@@ -363,11 +344,7 @@
             </a>
           </li>
 
-          <li
-            class="list-categories__category"
-            data-slide="item"
-            data-index="3"
-          >
+          <li class="list-categories__category">
             <a href="" class="category__link-category">
               <img
                 src="./src/imgs/apple-watch.png"
@@ -378,11 +355,7 @@
             </a>
           </li>
 
-          <li
-            class="list-categories__category"
-            data-slide="item"
-            data-index="4"
-          >
+          <li class="list-categories__category">
             <a href="" class="category__link-category">
               <img
                 src="./src/imgs/airpods.png"
@@ -393,11 +366,7 @@
             </a>
           </li>
 
-          <li
-            class="list-categories__category"
-            data-slide="item"
-            data-index="5"
-          >
+          <li class="list-categories__category">
             <a href="" class="category__link-category">
               <img
                 src="./src/imgs/airtag.png"
@@ -408,11 +377,7 @@
             </a>
           </li>
 
-          <li
-            class="list-categories__category"
-            data-slide="item"
-            data-index="6"
-          >
+          <li class="list-categories__category">
             <a href="" class="category__link-category">
               <img
                 src="./src/imgs/apple-tv.png"
@@ -423,11 +388,7 @@
             </a>
           </li>
 
-          <li
-            class="list-categories__category"
-            data-slide="item"
-            data-index="7"
-          >
+          <li class="list-categories__category">
             <a href="" class="category__link-category">
               <img
                 src="./src/imgs/home-pod.png"
@@ -438,11 +399,7 @@
             </a>
           </li>
 
-          <li
-            class="list-categories__category"
-            data-slide="item"
-            data-index="8"
-          >
+          <li class="list-categories__category">
             <a href="" class="category__link-category">
               <img
                 src="./src/imgs/acessorios.png"
@@ -453,10 +410,6 @@
             </a>
           </li>
         </ul>
-        <button
-          class="control-carrosel fa-solid fa-chevron-right"
-          data-slide="nav-next-button"
-        ></button>
       </section>
       <section class="container content__container-cards">
         <article class="container-cards__card first-card">
@@ -668,7 +621,7 @@
           </div>
         </article>
       </section>
-      <section class="container content__appleTV">
+      <section class="content__appleTV">
         <h3 class="appleTV__title"><i class="fa-brands fa-apple"></i>TV+</h3>
         <p class="appleTV__description-text">
           Original stories, ad-free, for everyone
@@ -680,16 +633,22 @@
 
         <a href="" class="appleTV__sing-in">Sing in</a>
 
-        <div class="appleTV__carrousel">
+        <div class="appleTV__carrousel" data-slide="wrapper">
           <button
             class="carrousel__control left fa-solid fa-chevron-left"
+            data-slide="nav-previous-button"
           ></button>
           <button
             class="carrousel__control right fa-solid fa-chevron-right"
+            data-slide="nav-next-button"
           ></button>
 
-          <ul class="container__carrosel-cards">
-            <li class="carrosel-img__card killers">
+          <ul class="container__carrosel-cards" data-slide="list">
+            <li
+              class="carrosel-img__card killers"
+              data-slide="item"
+              data-index="0"
+            >
               <div class="inner">
                 <div class="card__content-top">
                   <div class="logo-appleTV">
@@ -714,7 +673,11 @@
                 </div>
               </div>
             </li>
-            <li class="carrosel-img__card constellation">
+            <li
+              class="carrosel-img__card constellation"
+              data-slide="item"
+              data-index="1"
+            >
               <div class="inner">
                 <div class="card__content-top">
                   <div class="logo-appleTV">
@@ -739,7 +702,11 @@
                 </div>
               </div>
             </li>
-            <li class="carrosel-img__card morning">
+            <li
+              class="carrosel-img__card morning"
+              data-slide="item"
+              data-index="2"
+            >
               <div class="inner">
                 <div class="card__content-top">
                   <div class="logo-appleTV">
@@ -765,7 +732,7 @@
               </div>
             </li>
 
-            <li class="carrosel-img__card ted">
+            <li class="carrosel-img__card ted" data-slide="item" data-index="3">
               <div class="inner">
                 <div class="card__content-top">
                   <div class="logo-appleTV">
@@ -791,6 +758,7 @@
               </div>
             </li>
           </ul>
+          <div class="slide-crontrols" data-slide="controls-wrapper"></div>
         </div>
       </section>
     </main>

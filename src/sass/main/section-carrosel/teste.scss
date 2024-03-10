@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.appleTV__carrousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* trabalhar primeiro com a lista para facilitar */
+.container__carrosel-cards {
+  display: flex;
+  transition: 0.6s ease-in-out;
+}
+
+.carrosel-img__card {
+  width: 90vw;
+  height: 400%;
+  flex-shrink: 0;
+  padding: 10px;
+}

@@ -1,6 +1,5 @@
 .content__categories-menu {
   position: relative;
-  overflow: hidden;
   width: 100%;
   display: flex;
 
@@ -26,9 +25,10 @@
   }
 
   .categories-menu__list-categories {
+    overflow-y: hidden;
     display: flex;
     gap: 3rem;
-    justify-content: center;
+    justify-content: space-between;
     padding: 2.4rem 0;
     width: 100%;
     .list-categories__category {
