@@ -26,7 +26,6 @@ for (let i = 0; i < submenu.length; i++) {
 
 function closeSubmenu(e) {
   const close = e.target.parentElement;
-  header.classList.remove("active");
   close.classList.remove("active");
 }
 
