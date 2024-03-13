@@ -15,22 +15,37 @@
   .menu-acordeon__item-menu {
     border-bottom: 1px #ffffff77 solid;
     padding: 1rem 0;
+    cursor: pointer;
     .item-menu-title {
       font-size: 1.6rem;
       font-weight: 600;
       display: flex;
       justify-content: space-between;
+      i {
+        transform: rotate(-90deg);
+      }
+      i.actived {
+        transform: rotate(0deg);
+      }
     }
     .item-menu__submenu {
+      display: none;
       padding: 0.5rem 0 0 2rem;
       .submenu__item-submenu:not(:last-child) {
         padding-bottom: 1rem;
       }
     }
+    .item-menu__submenu.actived {
+      display: block;
+    }
   }
   .footer__terms-copy {
     padding: 1.5rem 0;
     border-bottom: 1px #ffffff77 solid;
+    a {
+      color: $blue-btn;
+      text-decoration: none;
+    }
   }
   .footer__terms {
     margin-top: 1rem;
@@ -62,6 +77,7 @@
         }
         .item-menu__submenu {
           padding: 1rem 0 0 0;
+          display: block;
         }
       }
     }

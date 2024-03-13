@@ -271,3 +271,16 @@ initSlider({
   startAtIndex: 0,
   timeInterval: 2000,
 });
+
+//footer
+const itemsMenuFooter = document.querySelectorAll(".menu-acordeon__item-menu");
+
+itemsMenuFooter.forEach((itemMenu) => {
+  itemMenu.addEventListener("click", () => {
+    const subMenuItem = itemMenu.lastElementChild;
+    itemsMenuFooter.forEach((event) =>
+      event.lastElementChild.classList.remove("actived")
+    );
+    subMenuItem.classList.add("actived");
+  });
+});
