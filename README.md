@@ -1,13 +1,9 @@
-# Clone site apple
+# Clone site da Apple
 
-Bem-vindo ao site da apple onde vou reproduzir o site da apple tanto para mobile quanto para desktop.
+Este e um site clone com intuito de praticar os conhecimentos adiquei ridos em cursos, em específico esse e um clone do site da Apple onde seu designer mexe muito com display grid, flexbox e algumas funcionalidades com JavaScript.
 
-## Tecnologias Utilizadas
+# Imagens do projeto
 
-- HTML
-- CSS
-- JavaScript
+![capa projeto desktop]("./src/img-readme/desktop.png")
 
-### em construção
-
-acesso ao deploy:
+![capa projeto mobile]("./src/img-readme/mobile.png")
