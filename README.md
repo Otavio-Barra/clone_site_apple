@@ -4,6 +4,6 @@ Este e um site clone com intuito de praticar os conhecimentos adiquei ridos em c
 
 # Imagens do projeto
 
-![capa projeto desktop]("./src/img-readme/desktop.png")
+![capa projeto desktop](./src/img-readme/desktop.png)
 
-![capa projeto mobile]("./src/img-readme/mobile.png")
+![capa projeto mobile](./src/img-readme/mobile.png)
