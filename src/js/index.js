@@ -13,20 +13,25 @@ menuHamburguer.addEventListener("click", () => {
 for (let i = 0; i < submenu.length; i++) {
   const currentSubMenu = submenu[i];
   currentSubMenu.addEventListener("click", () => {
-    header.classList.add("active");
     if (!subMenuActived[i].classList.contains("active")) {
       const submenuEnabled = document.querySelector(".link__submenu.active");
       if (submenuEnabled) {
         submenuEnabled.classList.remove("active");
       }
       subMenuActived[i].classList.add("active");
+      header.classList.add("active");
     }
   });
 }
 
 function closeSubmenu(e) {
   const close = e.target.parentElement;
+  const windowSize = window.innerWidth;
   close.classList.remove("active");
+
+  if (windowSize > 920) {
+    header.classList.remove("active");
+  }
 }
 
 //slider
