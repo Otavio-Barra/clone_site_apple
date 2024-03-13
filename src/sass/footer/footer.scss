@@ -23,13 +23,17 @@
       justify-content: space-between;
       i {
         transform: rotate(-90deg);
+        transition: all 0.2s ease-in-out;
       }
       i.actived {
         transform: rotate(0deg);
+        transition: all 0.2s ease-in-out;
       }
     }
     .item-menu__submenu {
       display: none;
+      transition: all 0.2s ease-in-out;
+
       padding: 0.5rem 0 0 2rem;
       .submenu__item-submenu:not(:last-child) {
         padding-bottom: 1rem;
@@ -37,6 +41,7 @@
     }
     .item-menu__submenu.actived {
       display: block;
+      transition: all 0.2s ease-in-out;
     }
   }
   .footer__terms-copy {

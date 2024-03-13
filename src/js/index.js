@@ -274,13 +274,22 @@ initSlider({
 
 //footer
 const itemsMenuFooter = document.querySelectorAll(".menu-acordeon__item-menu");
-
-itemsMenuFooter.forEach((itemMenu) => {
+// console.log(arrowIcon);
+itemsMenuFooter.forEach((itemMenu, index) => {
   itemMenu.addEventListener("click", () => {
     const subMenuItem = itemMenu.lastElementChild;
-    itemsMenuFooter.forEach((event) =>
-      event.lastElementChild.classList.remove("actived")
-    );
-    subMenuItem.classList.add("actived");
+    const arrowIcon = document.querySelectorAll(".item-menu-title>i");
+
+    if (subMenuItem.classList.contains("actived")) {
+      subMenuItem.classList.remove("actived");
+      arrowIcon[index].classList.remove("actived");
+    } else {
+      itemsMenuFooter.forEach((event, index) => {
+        event.lastElementChild.classList.remove("actived");
+        arrowIcon[index].classList.remove("actived");
+      });
+      subMenuItem.classList.add("actived");
+      arrowIcon[index].classList.add("actived");
+    }
   });
 });
