@@ -4,9 +4,9 @@ Este e um site clone com intuito de praticar os conhecimentos adiquei ridos em c
 
 ## Imagens do projeto
 
-![capa projeto desktop]("./src/img-readme/desktop.png")
+<img title="Capa Desktop" alt="Capa Desktop" src="./src/img-readme/desktop.png">
 
-![capa projeto mobile]("./src/img-readme/mobile.png")
+<img title="Capa Mobile" alt="Capa Mobile" src="./src/img-readme/mobile.png">
 
 ## Mais sobre o site
 
